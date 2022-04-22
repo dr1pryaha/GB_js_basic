@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Homework</title>
-</head>
-<body>
-<!--
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework</title>
+  </head>
+  <body>
+    <!--
 Обязательное задание.
 
 Необходимо пользователя попросить ввести температуру в градусах Цельсия,
@@ -19,10 +19,14 @@
 
 Уточнение: пользователь всегда вводит корректное число.
 -->
-<script>
-  "use strict";
+    <script>
+      "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
-</script>
-</body>
+      let tempCelsius = prompt("Сколько градусов по Цельсию?");
+      let tempFarenheit = (9 / 5) * tempCelsius + 32;
+      alert(
+        `Конвертер посчитал температуру из Цельсий в Фаренгейт: ${tempFarenheit}`
+      );
+    </script>
+  </body>
 </html>
