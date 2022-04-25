@@ -28,8 +28,9 @@
     <script>
       "use strict";
 
-      let num = prompt("Введите число:");
-      let result = alert(
+      const num = prompt("Введите число:");
+
+      alert(
         `В числе ${num} количество сотен: ${
           num[num.length - 3] || 0
         }, десятков: ${num[num.length - 2] || 0}, единиц: ${

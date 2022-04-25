@@ -22,11 +22,13 @@
     <script>
       "use strict";
 
-      let tempCelsius = prompt("Сколько градусов по Цельсию?");
-      let tempFarenheit = (9 / 5) * tempCelsius + 32;
-      alert(
-        `Конвертер посчитал температуру из Цельсий в Фаренгейт: ${tempFarenheit}`
+      const tempCelsius = Number.parseFloat(
+        prompt("Сколько градусов по Цельсию?")
       );
+
+      const tempFarenheit = (9 / 5) * tempCelsius + 32;
+
+      alert(`Цельсий: ${tempCelsius}, Фаренгейт: ${tempFarenheit.toFixed(2)}`);
     </script>
   </body>
 </html>
